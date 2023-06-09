@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Mulish:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
@@ -16,7 +17,7 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="act">
             <ul>
                 <li>
                     <a href="#">
@@ -43,6 +44,20 @@
                 <li>
                     <a href="#">+7(89)746-54-54</a>
                     <a href="#">с 10:00 до 20:00 по МСК</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="act1">
+            <ul>
+                <li><a href="#">
+                    <img src="./icon/Group 928.png" alt="">
+                </a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        с 10:00 до 20:00 по МСК
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -97,7 +112,7 @@
                             выполняет функции съемки, детектирования радарных комплексов и оповещения по базе камер GPS!
                         </p>
                         <div class="vidio">
-                            <video src="./icon/1.mp4"></video>
+                            <video src="./icon/1.mp4" controls></video>
                         </div>
                     </div>
                 </div>
@@ -114,7 +129,7 @@
                             выполняет функции съемки, детектирования радарных комплексов и оповещения по базе камер GPS!
                         </p>
                         <div class="vidio">
-                            <video src="./icon/3.mp4"></video>
+                            <video src="./icon/3.mp4" controls></video>
                         </div>
                     </div>
                     <div class="block">
@@ -226,32 +241,125 @@
                 <div class="box">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper wrap myswiperWraper">
-                            
+
                         </div>
                         <div class="custom">
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-pagination"></div>
                             <div class="swiper-button-next"></div>
-                            
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="premuve">
+            <div class="cont">
+                <h2>
+                    ПРЕИМУЩЕСТВА <br> НАШЕГО МАГАЗИНА
+                </h2>
+                <div class="box">
+                    <div class="block">
+                        <img src="./icon/cursor.svg" alt="">
+                        <p>
+                            Оставьте заявку
+                        </p>
+                    </div>
+                    <div class="block">
+                        <img src="./icon/user.svg" alt="">
+                        <p>
+                            С Вами свяжетс менеджер и уточнит детали.
+                        </p>
+                    </div>
+                    <div class="block">
+                        <img src="./icon/box.svg" alt="">
+                        <p>
+                            Ваш заказ бережно упакуют и отправят
+                        </p>
+                    </div>
+                    <div class="block">
+                        <img src="./icon/ok.svg" alt="">
+                        <p>
+                            Вы забираете заказ
+                        </p>
+                    </div>
+                    <div class="block">
+                        <img src="./icon/credi.svg" alt="">
+                        <p>
+                            Оплата при получении товара
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form">
+            <div class="cont">
+                <div class="box">
+                    <div class="block">
+                        <h1>EOS R100</h1>
+                        <h3>6 700 000 сум</h3>
+                        <h2>6 000 000 сум</h2>
+                        <button>СКИДКА! 30%</button>
+                        <form action="">
+                            <input type="text" placeholder="Россия" name="" id="">
+                            <input type="text" placeholder="Имя" name="" id="">
+                            <input type="text" placeholder="Телефон" name="" id="inp">
+
+                        </form>
+                        <div class="btnClick">
+                            <button>Заказть со скидкой</button>
+                            <p>
+                                Осталось <br>
+                                <span>30</span> товаров
+                            </p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <img src="./icon/Ellipse 41.png" alt="">
+                        <img src="./icon/Group 929.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="box">
+            <div class="block">
+                <p>© 2023 Все права защищены</p>
+            </div>
+            <div class="block">
+                <p>Created by:</p>
+                
+                <a href="https://lcode.uz/ru/"><img src="./icon/Frame 4 (1).png" alt=""></a>
+            </div>
+        </div>
+    </footer>
 
-
-    
+    <script src="https://unpkg.com/imask"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         new Swiper(".mySwiper", {
-            slidesPerView: 3,
+           
             spaceBetween: 30,
+            breakpoints:{
+                780:{
+                    slidesPerView: 1,
+                },
+                1100:{
+                    slidesPerView: 2,
+                },1340:{
+                    slidesPerView: 3,
+                }
+            },
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
             },
         });
+
+        AOS.init();
+
     </script>
     <script src="./js/script.js"></script>
 </body>

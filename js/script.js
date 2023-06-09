@@ -1,4 +1,5 @@
 let d = document
+AOS.init();
 let contentBox = d.querySelector('.contentBox')
 let myswiperWraper = d.querySelector('.myswiperWraper')
 function photoCrieyt(text1, coment1, video1Src, video2Src, text2, coment2) {
@@ -6,7 +7,7 @@ function photoCrieyt(text1, coment1, video1Src, video2Src, text2, coment2) {
     box1.classList.add('box1');
     const block1 = document.createElement('div');
     block1.classList.add('block');
-
+    box1.dataset.aos='fade-left'
     const heading1 = document.createElement('h3');
     heading1.textContent = text1;
 
@@ -17,19 +18,22 @@ function photoCrieyt(text1, coment1, video1Src, video2Src, text2, coment2) {
     block1.appendChild(paragraph1);
 
     const block2 = document.createElement('div');
+    block2.id = 'aos'
     block2.classList.add('block');
 
     const video1 = document.createElement('img');
+    
+    
     video1.setAttribute('src', video1Src);
 
     block2.appendChild(video1);
-
+    
     box1.appendChild(block1);
     box1.appendChild(block2);
 
     const box2 = document.createElement('div');
     box2.classList.add('box2');
-
+    box2.dataset.aos='fade-right'
     const block3 = document.createElement('div');
     block3.classList.add('block');
 
@@ -207,6 +211,14 @@ for (let i of arr) {
     photoCrieyt(i.box1.text, i.box1.coment, i.box1.img, i.box2.img, i.box2.text, i.box2.coment)
     
 }
+
+
 for(let i of comentArr){
     swipers(i.img, i.comment, i.name, i.stars)
 }
+let inp = d.querySelector('#inp')
+let maskOptions = {
+    mask: "+{7} (000) 000-00-00",
+    
+};
+let mask = IMask(inp, maskOptions);
