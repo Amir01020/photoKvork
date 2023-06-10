@@ -1160,5 +1160,5 @@ footer {
     }
 }
 main .head .box .block:nth-child(2) img:nth-child(2){
-    width: 100%;
+    max-width: 100% !important;
 }
