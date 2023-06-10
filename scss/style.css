@@ -939,4 +939,7 @@ footer .box .block p {
   main .head .box .block button {
     width: 100%;
   }
+}
+main .head .box .block:nth-child(2) img:nth-child(2) {
+  width: 110%;
 }/*# sourceMappingURL=style.css.map */
