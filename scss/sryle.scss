@@ -859,19 +859,44 @@ main {
                 }
 
                 form {
+                    
                     input {
                         width: 100%;
                         height: 58px;
                         border: 1px solid #FF801C;
                         border-radius: 10px;
-                        background-color: transparent;
-                        color: #fff;
+                        background-color: #ffffffb9;
+                        color: #000;
                         padding: 20px;
                         font-size: 18px;
                         margin-top: 16px;
                     }
+                    
                 }
 
+                #time{  
+                    width: 100%;
+                    height: 58px;
+                    border: 1px solid #FF801C;
+                    border-radius: 10px;
+                    background-color: transparent;
+                    color: #fff;
+                    overflow: hidden;
+                    font-size: 18px;
+                    @include flex(flex,space-between ,center);
+                    
+                    margin-top: 16px;
+                    .text{
+                        width: 70%;
+                        @include flex(flex,center ,center);
+                    }
+                    .com{
+                        background-color: #FF801C;
+                        height: 58px;
+                        width: 30%;
+                        @include flex(flex,center ,center);
+                    }
+                }
                 .btnClick {
                     margin-top: 84px;
                     @include flex(flex, start, center);

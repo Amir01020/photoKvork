@@ -7,7 +7,7 @@ function photoCrieyt(text1, coment1, video1Src, video2Src, text2, coment2) {
     box1.classList.add('box1');
     const block1 = document.createElement('div');
     block1.classList.add('block');
-    box1.dataset.aos='fade-left'
+    box1.dataset.aos = 'fade-left'
     const heading1 = document.createElement('h3');
     heading1.textContent = text1;
 
@@ -22,18 +22,18 @@ function photoCrieyt(text1, coment1, video1Src, video2Src, text2, coment2) {
     block2.classList.add('block');
 
     const video1 = document.createElement('img');
-    
-    
+
+
     video1.setAttribute('src', video1Src);
 
     block2.appendChild(video1);
-    
+
     box1.appendChild(block1);
     box1.appendChild(block2);
 
     const box2 = document.createElement('div');
     box2.classList.add('box2');
-    box2.dataset.aos='fade-right'
+    box2.dataset.aos = 'fade-right'
     const block3 = document.createElement('div');
     block3.classList.add('block');
 
@@ -91,9 +91,9 @@ function swipers(imgas, comment, name, star) {
         const iconImg = document.createElement('img');
         if (i <= star) {
             iconImg.setAttribute('src', './icon/Frame 945.png');
-        }else{
+        } else {
             iconImg.setAttribute('src', './icon/Frame 941.png');
-            
+
         }
         imgDiv.appendChild(iconImg);
     }
@@ -109,7 +109,7 @@ function swipers(imgas, comment, name, star) {
     const span = document.createElement('div');
     span.classList.add('span');
 
-    
+
 
     vb.appendChild(h3);
     vb.appendChild(imgDiv);
@@ -209,16 +209,57 @@ let arr = [
 
 for (let i of arr) {
     photoCrieyt(i.box1.text, i.box1.coment, i.box1.img, i.box2.img, i.box2.text, i.box2.coment)
-    
+
 }
 
 
-for(let i of comentArr){
+for (let i of comentArr) {
     swipers(i.img, i.comment, i.name, i.stars)
 }
 let inp = d.querySelector('#inp')
 let maskOptions = {
     mask: "+{7} (000) 000-00-00",
-    
+
 };
 let mask = IMask(inp, maskOptions);
+
+let times = new Date()
+let hours = times.getHours(); // получаем текущие часы
+let minutes1 = times.getMinutes(); // получаем текущие минуты
+let seconds1 = times.getSeconds(); // получаем текущие секунды
+
+let hour = d.querySelector('#hour')
+let minutes = d.querySelector('#minutes')
+let seconds = d.querySelector('#seconds')
+let t1 = 23
+let m1 = 57
+let s1 = 1
+
+
+
+let tt = 23
+setInterval(() => {
+    if (tt <= hours) {
+        hour.innerHTML = '0'
+        minutes.innerHTML = '0'
+        seconds.innerHTML = '0'
+    } else {
+        if (s1 != 0) {
+            s1 = s1-1
+            hour.innerHTML = t1 - hours
+            minutes.innerHTML = m1
+            seconds.innerHTML = s1 
+        }else{
+            s1 = 60
+        }
+    }
+    
+}, 1000);
+setInterval(() => {
+    if (m1 != 0) {
+        m1 = m1-1
+        minutes.innerHTML = m1 
+    }else{
+        m1 = 60
+    }
+}, 60000);
