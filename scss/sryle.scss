@@ -1114,7 +1114,7 @@ footer {
 
     main .head .box .block h1 {
 
-        font-size: 60.3043px !important;
+        font-size: 40.3043px !important;
     }
 
     main .head .box .block h2 {
@@ -1131,7 +1131,7 @@ footer {
     
     main .form .box .block h1 {
 
-        font-size: 60.3043px !important;
+        font-size: 40.3043px !important;
     }
 
     main .head .box .block h3 {
@@ -1179,9 +1179,25 @@ footer {
         }
     }
 }
-@media(max-width:400px){
+@media(max-width:404px){
     main .head .box .block button{
         width: 100%;
+    }
+    main .statis h2{
+        font-size: 25px;
+    }
+    main .form .box .block #time{
+        height: fit-content;
+        .text{
+            flex-wrap: wrap !important;
+            justify-content: center !important;
+            padding: 10px !important;
+            gap: 10px !important;
+        }
+    }
+    main .reviews .box .mySwiper .wrap .slayd .coment{
+        padding: 120px 10px 30px !important;
+        
     }
 }
 main .head .box .block:nth-child(2) img:nth-child(2){
