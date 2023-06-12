@@ -859,7 +859,7 @@ main {
                 }
 
                 form {
-                    
+
                     input {
                         width: 100%;
                         height: 58px;
@@ -871,10 +871,10 @@ main {
                         font-size: 18px;
                         margin-top: 16px;
                     }
-                    
+
                 }
 
-                #time{  
+                #time {
                     width: 100%;
                     height: 58px;
                     border: 1px solid #FF801C;
@@ -883,20 +883,23 @@ main {
                     color: #fff;
                     overflow: hidden;
                     font-size: 18px;
-                    @include flex(flex,space-between ,center);
-                    
+                    @include flex(flex, space-between, center);
+
                     margin-top: 16px;
-                    .text{
+
+                    .text {
                         width: 70%;
-                        @include flex(flex,center ,center);
+                        @include flex(flex, center, center);
                     }
-                    .com{
+
+                    .com {
                         background-color: #FF801C;
                         height: 58px;
                         width: 30%;
-                        @include flex(flex,center ,center);
+                        @include flex(flex, center, center);
                     }
                 }
+
                 .btnClick {
                     margin-top: 84px;
                     @include flex(flex, start, center);
@@ -1121,14 +1124,16 @@ footer {
         font-size: 50.3043px !important;
 
     }
-    main .content .box .block:nth-child(1) .text{
+
+    main .content .box .block:nth-child(1) .text {
         width: 100%;
     }
-    main .content2 .box .block:nth-child(2) .text{
+
+    main .content2 .box .block:nth-child(2) .text {
 
         width: 100%;
     }
-    
+
     main .form .box .block h1 {
 
         font-size: 40.3043px !important;
@@ -1179,27 +1184,43 @@ footer {
         }
     }
 }
-@media(max-width:404px){
-    main .head .box .block button{
+
+@media(max-width:404px) {
+    main .head .box .block button {
         width: 100%;
     }
-    main .statis h2{
+
+    main .statis h2 {
         font-size: 25px;
     }
-    main .form .box .block #time{
+
+    main .form .box .block #time {
         height: fit-content;
-        .text{
+
+        .text {
             flex-wrap: wrap !important;
             justify-content: center !important;
             padding: 10px !important;
             gap: 10px !important;
         }
     }
-    main .reviews .box .mySwiper .wrap .slayd .coment{
+
+    main .reviews .box .mySwiper .wrap .slayd .coment {
         padding: 120px 10px 30px !important;
-        
+
     }
 }
-main .head .box .block:nth-child(2) img:nth-child(2){
+
+main .head .box .block:nth-child(2) img:nth-child(2) {
     max-width: 100% !important;
+}
+
+main .head .box .block:nth-child(2) img:nth-child(2){
+    width: auto;
+    max-width: 100%;
+}
+
+main .statis .box .blobk:nth-child(2) img:nth-child(2){
+    width: auto;
+    max-width: 100%;
 }

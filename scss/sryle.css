@@ -986,4 +986,14 @@ footer .box .block p {
 }
 main .head .box .block:nth-child(2) img:nth-child(2) {
   max-width: 100% !important;
+}
+
+main .head .box .block:nth-child(2) img:nth-child(2) {
+  width: auto;
+  max-width: 100%;
+}
+
+main .statis .box .blobk:nth-child(2) img:nth-child(2) {
+  width: auto;
+  max-width: 100%;
 }/*# sourceMappingURL=sryle.css.map */
