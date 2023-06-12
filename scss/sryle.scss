@@ -1087,6 +1087,20 @@ footer {
 
         }
     }
+    main .photoContent .box1{
+        flex-wrap: wrap;
+        height: fit-content;
+        .block{
+            width: 100% !important;
+        }
+    }
+    main .photoContent .box2{
+        flex-wrap: wrap;
+        height: fit-content;
+        .block{
+            width: 100% !important;
+        }
+    }
 
     main .premuve .box {
         flex-wrap: wrap;
@@ -1110,10 +1124,24 @@ footer {
 }
 
 @media(max-width:576px) {
+    .cont{
+        padding: 0 20px;
+    }
+    main .content2 .box .block:nth-child(2) h2{
+        margin-bottom: 50px !important;
+    }
     main .premuve .box {
         gap: 40px 10px !important;
         justify-content: start !important;
+        
     }
+    main .content{
+        margin-top: 100px;
+    }
+    main .content2{
+        margin-top: 100px;
+    }
+
 
     main .head .box .block h1 {
 
@@ -1183,9 +1211,91 @@ footer {
             width: 80%;
         }
     }
+    main .content .box .block:nth-child(1) h2{
+        font-size: 30px;
+        margin-bottom: 30px !important;
+    }
+    main .content2 .box .block:nth-child(2) h2{
+        font-size: 25px !important;
+    }
+    main .content2{
+        margin-top: 50px;
+    }
+    main .out{
+        margin-top: 50px;
+    }
+    main .photoContent{
+        margin-top: 50px;
+    }
+    main .statis{
+        margin-top: 50px;
+    }
+    main .reviews{
+        margin-top: 50px;
+    }
+    main .statis .box{
+        gap:  0;
+        .block{
+            width: 100% ;
+        }
+    }
+    main .statis .box .blobk:nth-child(1) .text span{
+        text-align: right;
+    }
+    main .statis .box .blobk:nth-child(1) .text{
+        p{
+            font-size: 12px;
+        }
+        span{
+            font-size: 12px;
+        }
+
+    }
+    main .reviews{
+        margin: 50px 0;
+        h2{
+            margin-bottom: 30px;
+        }
+    }
+    main .statis .box .blobk{
+        width: 100% !important;
+    }
+    main .photoContent .box1 .block:nth-child(1) h3{
+        margin-bottom: 20px;
+    }
+    main .photoContent .box2 .block:nth-child(2) h3{
+        margin-bottom: 20px;
+    }
 }
 
 @media(max-width:404px) {
+    main .photoContent .box1 .block:nth-child(1) h3{
+        font-size: 20px;
+    }
+    main .photoContent .box2 .block:nth-child(2) h3{
+        font-size: 20px;
+    }
+    main .out .box .block p{
+        font-size: 16px;
+    }
+    main .head .box .block h1{
+        font-size: 30px !important;
+    }
+    main .head .box .block h2{
+        font-size: 25px !important;
+    }
+    main .head .box .block h3{
+        font-size: 20px;
+
+    }
+    main .content .box .block:nth-child(1) h2{
+        font-size: 25px !important;
+    }
+    footer .box{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
     main .head .box .block button {
         width: 100%;
     }
@@ -1210,7 +1320,16 @@ footer {
 
     }
 }
+@media(max-width:386px) {
+    main .form .box .block #time .com{
+        height: 100px;
+    }
+    header nav ul .right{
 
+        text-align: right !important;
+    }
+    
+}
 main .head .box .block:nth-child(2) img:nth-child(2) {
     max-width: 100% !important;
 }
@@ -1223,4 +1342,11 @@ main .head .box .block:nth-child(2) img:nth-child(2){
 main .statis .box .blobk:nth-child(2) img:nth-child(2){
     width: auto;
     max-width: 100%;
+}
+img{
+    width: auto !important;
+    max-width: 100%;
+}
+main .reviews .box .mySwiper .wrap .slayd .imgs img{
+    width: 100% !important;
 }

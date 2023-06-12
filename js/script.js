@@ -7,7 +7,7 @@ function photoCrieyt(text1, coment1, video1Src, video2Src, text2, coment2) {
     box1.classList.add('box1');
     const block1 = document.createElement('div');
     block1.classList.add('block');
-    box1.dataset.aos = 'fade-left'
+    box1.dataset.aos = ''
     const heading1 = document.createElement('h3');
     heading1.textContent = text1;
 
@@ -33,7 +33,7 @@ function photoCrieyt(text1, coment1, video1Src, video2Src, text2, coment2) {
 
     const box2 = document.createElement('div');
     box2.classList.add('box2');
-    box2.dataset.aos = 'fade-right'
+    box2.dataset.aos = ''
     const block3 = document.createElement('div');
     block3.classList.add('block');
 
