@@ -935,7 +935,6 @@ footer .box .block p {
   }
   main .premuve .box {
     gap: 40px 10px !important;
-    justify-content: start !important;
   }
   main .content {
     margin-top: 100px;
@@ -1042,8 +1041,28 @@ footer .box .block p {
   main .photoContent .box2 .block:nth-child(2) h3 {
     margin-bottom: 20px;
   }
+  main .out .box {
+    justify-content: center;
+  }
+  main .out .box .block {
+    max-width: 40%;
+  }
+  main .premuve .box {
+    justify-content: center;
+    gap: 30px;
+  }
+  main .premuve .box .block {
+    max-width: 35% !important;
+  }
+  main .premuve .box .block p {
+    font-size: 12px;
+  }
 }
 @media (max-width: 404px) {
+  header .act {
+    padding: 10px 20px;
+    gap: 10px;
+  }
   main .photoContent .box1 .block:nth-child(1) h3 {
     font-size: 20px;
   }
